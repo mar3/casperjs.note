@@ -7,4 +7,6 @@
 casper = require('casper').create()
 casper.start 'http://www.example.com', ->
 	@echo @getTitle()
+casper.then ->
+	@capture 'www.example.com.png'
 casper.run()
