@@ -1,7 +1,7 @@
 #!/usr/bin/env casperjs
 // coding: utf-8
 //
-// capserjs を利用したスクレイピングの簡単なサンプル
+// CapserJS を利用したウェブスクレイピングの簡単なサンプル
 //
 
 function main() {

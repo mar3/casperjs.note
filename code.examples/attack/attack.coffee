@@ -1,12 +1,12 @@
 #!/usr/bin/env casperjs
 # coding: utf-8
 #
-# casperJS を利用したスクレイピングの例(CoffeeScript 版)
+# CasperJS を利用したウェブスクレイピングの例(CoffeeScript 版)
 #
 
 casper = require('casper').create()
-casper.start 'http://www.example.com', ->
+casper.start 'http://www.google.com', ->
 	@echo @getTitle()
 casper.then ->
-	@capture 'www.example.com.png'
+	@capture 'www.google.com.png'
 casper.run()
