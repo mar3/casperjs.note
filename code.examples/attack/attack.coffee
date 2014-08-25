@@ -5,11 +5,15 @@
 #
 
 main = () ->
+
 	casper = require('casper').create()
+
 	casper.start 'http://www.google.com', ->
 		@echo @getTitle()
+
 	casper.then ->
 		@capture 'www.google.com.png'
+
 	casper.run()
 
 main()
